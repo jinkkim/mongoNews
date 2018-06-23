@@ -1,0 +1,17 @@
+<div class = "container">    
+    <div class = "row">
+        {{#each data}}
+        <div class="card mx-1 my-2" style="width: 16rem;">
+          <img class="card-img-top" src="{{this.imgLink}}" alt="Card image cap">
+          <div class="card-body">
+              <a href="{{this.link}}">
+                  <p class = "card-text">{{this.date}}</p>
+                  <p class = "card-text h4">{{this.title}}</p>
+                  <p class = "card-text">{{this.brief}}</p>
+              </a>
+          </div >
+          <button id={{this._id}} class = "btn btn-danger btn-sm offset-3 mb-3 deleteArticle" style = "width:50%;" type = "submit" foremergod="post">Delete article</button>
+        </div>
+        {{/each}}
+    </div>
+</div>

@@ -1,0 +1,16 @@
+(function(){
+  window['optimizely'] = window['optimizely'] || [];
+  window['optimizely'].push(['activateGeoDelayedExperiments', {
+    'location':{
+      'city': "ATLANTA",
+      'continent': "NA",
+      'country': "US",
+      'region': "GA"
+    },
+    'ip':"128.61.11.203"
+  }]);
+})
+//
+()
+
+;
