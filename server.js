@@ -3,7 +3,7 @@ var app = express();
 
 // Public settings
 app.use(express.static(process.cwd() + '/public'));
-var port = process.env.PORT || 3000;
+var PORT = process.env.PORT || 3000;
 
 // mongo database
 var mongoose = require("mongoose");
@@ -125,6 +125,6 @@ app.post("/deleteArticle/:id", function(req, res){
 });
 
 //listening
-app.listen(port, function(){
-    console.log("Listening on port: " + port);
+app.listen(PORT, function(){
+    console.log("Listening on port: " + PORT);
 });

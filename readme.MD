@@ -11,7 +11,7 @@ create a web app that lets users view, save and leave comments on the latest new
 ## Node dependencies:
 * express
 * express-handlebars
-* body-parcer
+* body-parser
 * handlebars
 * mongoose
 * cheerio
